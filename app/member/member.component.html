@@ -1,0 +1,6 @@
+<ol>
+  <li *ngFor="let product of this.allproducts">
+    {{product.productCode}} - {{product.productName}} - {{product.productLine}}
+    <a routerLink="/product/{{product.productCode}}">Edit</a>
+  </li>
+</ol>
